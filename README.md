@@ -40,19 +40,19 @@ chmod 400 desafio-ec2-key.pem
 # 2. Conectar à instância (substitua o IP e o nome do arquivo)
 ssh -i "desafio-ec2-key.pem" ec2-user@<IP_PÚBLICO_DA_SUA_INSTÂNCIA>
 
-# Comandos de Exemplo Executados na Instância (Amazon Linux)
+# 3. Comandos de Exemplo Executados na Instância (Amazon Linux)
 sudo yum update -y                    # Atualiza os pacotes do SO
 sudo yum install httpd -y             # Instala o servidor web Apache
 sudo systemctl start httpd            # Inicia o serviço web
 sudo systemctl enable httpd           # Habilita o serviço para iniciar automaticamente
-4. Gerenciamento do Ciclo de Vida
+#  4. Gerenciamento do Ciclo de Vida
 Foi realizada a prática de gerenciamento do ciclo de vida:
 
 Ação	Descrição	Impacto em Custos e Dados
 Stop	Desliga a instância de forma controlada.	A cobrança da instância para, mas o EBS (armazenamento) continua sendo cobrado.
 Start	Liga a instância novamente.	A cobrança é retomada. Geralmente, a instância recebe um novo IP Público (a menos que um IP Elástico seja usado).
 Terminate	Deleta a instância permanentemente.	A cobrança é encerrada. Por padrão, o volume EBS também é deletado, garantindo a remoção de todos os custos.
-💡 Conceitos Chave e Insights Adquiridos
+##  💡 Conceitos Chave e Insights Adquiridos
 Esta seção destaca os aprendizados mais importantes do laboratório:
 
 Chave de Segurança (Key Pair): É o método de autenticação criptografada. A chave privada (.pem) é insubstituível e, se perdida, o acesso via SSH à instância é impossível.
@@ -63,7 +63,7 @@ Diferença de Ciclo de Vida: É crucial entender que Stop (Parar) não é o mesm
 
 MetaDados da Instância: Aprendi a visualizar os metadados da instância (http://169.254.169.254/latest/meta-data/) para obter informações como IP local, ID da instância e Key Pair.
 
-🚀 Próximos Passos e Aprimoramento
+##  🚀 Próximos Passos e Aprimoramento
 Como continuidade deste aprendizado, os próximos passos seriam:
 
 IP Elástico (EIP): Configurar um EIP para associar um endereço IP público estático à instância, garantindo que o IP não mude após um Stop/Start.
@@ -72,10 +72,10 @@ User Data: Utilizar o campo User Data na criação da instância para injetar e 
 
 Monitoramento: Configurar alarmes básicos do CloudWatch para monitorar métricas como utilização da CPU e o status da instância.
 
-👨‍💻 Autor
+##  👨‍💻 Autor
 Repositório Desenvolvido por: RUI FRANCISCO
 
-📝 Notas Finais
+##  📝 Notas Finais
 Este projeto serviu como uma excelente oportunidade para consolidar o conhecimento prático sobre o serviço EC2 da AWS, desde a criação até o gerenciamento do ciclo de vida das instâncias, sempre com foco em segurança e boas práticas.
 
 Instruções para uso:
