@@ -1,10 +1,10 @@
-🚀 Desafio DIO: Gerenciamento e Documentação de Instâncias EC2 na AWS
-📋 Visão Geral do Projeto
+##  🚀 Desafio DIO: Gerenciamento e Documentação de Instâncias EC2 na AWS
+#  📋 Visão Geral do Projeto
 Este repositório é o entregável do Desafio de Projeto da DIO, focado em consolidar os conhecimentos sobre o gerenciamento do serviço Elastic Compute Cloud (EC2) da Amazon Web Services (AWS).
 
 O objetivo principal foi transformar a experiência prática de criação, configuração e ciclo de vida de uma instância EC2 em uma documentação clara e estruturada, utilizando o GitHub como ferramenta de compartilhamento técnico.
 
-🎯 Objetivos de Aprendizagem Alcançados
+#  🎯 Objetivos de Aprendizagem Alcançados
 Ao completar o desafio e documentar o processo, os seguintes conceitos foram aplicados e consolidados:
 
 Lançamento de Instância: Compreensão e aplicação de todos os passos para o launch de uma VM (Máquina Virtual) na nuvem AWS.
@@ -15,7 +15,7 @@ Ciclo de Vida da Instância: Diferenciação e uso prático das ações de Stop,
 
 Documentação Técnica: Organização de um repositório público no GitHub com foco na clareza e estrutura de processos.
 
-🛠️ Detalhes da Implementação Técnica (Passo a Passo)
+#  🛠️ Detalhes da Implementação Técnica (Passo a Passo)
 A implementação seguiu as boas práticas na AWS e concentrou-se no gerenciamento de uma instância de teste.
 
 1. Configuração da Instância
